@@ -3,8 +3,8 @@ package basics;
 public class HelloWorld {
 	
 	public static void main(String[] args) {
-		System.out.print("Hello World");
-		System.out.print("Welcome to selenium with Java course");
+		System.out.println("Hello World");
+		System.out.println("Welcome to selenium with Java course");
 	}
 
 }
