@@ -32,7 +32,7 @@ package basics;
 * 	up casting: lower memory type to higher memory type : widening : no data loss
 * 	down casting: higher memory data type to lower memory data type : narrowing : data loss is possible
 * 
-* Converting primitive data type to wrapper class: boxing
+* 	Converting primitive data type to wrapper class: boxing
 *  Converting wrapper to primitive : un-boxing
 * 
 * 
@@ -125,6 +125,35 @@ public class DatatypesDemo {
 		System.out.println(ds+10);
 		double s2d = Double.parseDouble(ds);
 		System.out.println(s2d+10);
+		
+		// type casting: converting one primitive type to another primitive type
+		// up casting: lower memory type to higher memory type
+		// down casting: higher memory type to lower memory type
+		// up casting
+		short shLow = 1234;
+		int iHigh = shLow;
+		System.out.println(iHigh);
+		
+		int iLow = 123;
+		float fHigh = iLow;
+		System.out.println(fHigh);
+		
+		// down casting
+		// lower_data_type var_name = (lower_data_type) higher_data_type_var_name
+		long lHigh = 12345l;
+		int il = (int) lHigh;
+		System.out.println(il);
+		
+		double dHigh = 123.456;
+		int  ilow = (int) dHigh;
+		float flow = (float) dHigh;
+		System.out.println(ilow);
+		System.out.println(flow);
+		
+		short shigh = 400;
+		byte blow = (byte) shigh;
+		System.out.println(blow);
+		
 		
 	}
 
