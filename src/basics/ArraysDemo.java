@@ -58,22 +58,35 @@ public class ArraysDemo {
 		marks[5] = 11;
 
 		// retrieving data from the array
-		System.out.println(marks[0]);
-		System.out.println(marks[1]);
-		System.out.println(marks[2]);
-		System.out.println(marks[3]);
-		System.out.println(marks[4]);
-		System.out.println(marks[5]);
+//		System.out.println(marks[0]);
+//		System.out.println(marks[1]);
+//		System.out.println(marks[2]);
+//		System.out.println(marks[3]);
+//		System.out.println(marks[4]);
+//		System.out.println(marks[5]);
+//		for(int i =0; i < marks.length; i++) {
+//			System.out.println(marks[i]);
+//		}
+		for(int mark : marks) {
+			System.out.println(mark);
+		}
 
 		// initialization of a 1D array
 		char[] vowels = { 'a', 'e', 'i', 'o', 'u' };
 
 		// retrieve the data
-		System.out.println(vowels[0]);
-		System.out.println(vowels[1]);
-		System.out.println(vowels[2]);
-		System.out.println(vowels[3]);
-		System.out.println(vowels[4]);
+//		System.out.println(vowels[0]);
+//		System.out.println(vowels[1]);
+//		System.out.println(vowels[2]);
+//		System.out.println(vowels[3]);
+//		System.out.println(vowels[4]);
+		/*for(array_type var_name : array_var_name){
+		* 			statements;
+		* }
+		* */
+		for(char vowel : vowels) {
+			System.out.println(vowel);
+		}
 
 		// to find the length of an array we can use length property
 		System.out.println(vowels.length);

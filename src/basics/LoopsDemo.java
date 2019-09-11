@@ -86,6 +86,41 @@ public class LoopsDemo {
 //			str = sc.next();
 //			System.out.println("string is "+str);
 //		}
+		// print even numbers from 0 to 20
+		// for(initialization; condition; increment\decrement){ statements }
+		for (int k = 0; k < 20; k++) {
+			if (k % 2 == 0) {
+				System.out.println(k);
+			}
+		}
+
+		for (int l = 0; l < 10; l++) {
+			if (l == 5) {
+//				break;
+				continue;
+			}
+			System.out.println(l);
+		}
+
+		// print prime numbers from 2 to given number
+		System.out.println("enter the end number until which you want to print prime numbers");
+		int endNumber = sc.nextInt();
+		for (int number = 2; number <= endNumber; number++) {
+			boolean status = true;
+			for (int p = 2; p <= number / 2; p++) {
+				if (number % p == 0) {
+					status = false;
+					break;
+				}
+			}
+			if (status) {
+				System.out.print(number+"  ");
+			} 
+//			else {
+//				System.out.println("number is not prime");
+//			}
+		}
+
 	}
 
 }
