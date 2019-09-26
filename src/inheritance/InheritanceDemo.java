@@ -53,6 +53,16 @@ public class InheritanceDemo {
 		ChildTwo c2Obj = new ChildTwo();
 		c2Obj.methodFour(); // ChildTwo class
 		c2Obj.methodOne(); // Parent class
+		
+		// object reference to the parent class and object creation to the child class
+		Parent pc1Obj =  new ChildOne();
+		pc1Obj.methodOne();
+//		ChildOne cObj = (ChildOne) pc1Obj;
+//		cObj.methodTwo();
+		((ChildOne)pc1Obj).methodTwo();
+//		short shHigh = 123;
+//		byte byLow = (byte) shHigh;
+		
 	}
 
 }
