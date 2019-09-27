@@ -25,6 +25,18 @@ public class PolymorphismDemo {
 		cobj.add("10", 20);
 		cobj.add(10, "10", 20);
 		cobj.add(10, "20");
+		
+		
+//		Runtime polymorphism
+		RuntimePolyParent rpObj = new RuntimePolyParent();
+		rpObj.add(10, "30"); // 1030
+		
+		RuntimePolyChild rcObj = new RuntimePolyChild();
+		rcObj.add(10, "30"); // 40
+		
+		RuntimePolyParent rpcObj = new RuntimePolyChild();
+		rpcObj.add(10,  "30"); // 1030
+		
 	}
 
 }

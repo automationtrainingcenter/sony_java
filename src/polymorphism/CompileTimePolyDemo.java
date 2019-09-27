@@ -22,4 +22,10 @@ public class CompileTimePolyDemo {
 		int ia = Integer.parseInt(a);
 		System.out.println(ia + b);
 	}
+	
+//	public int add(int a, int b) {
+//		
+//	}
+	// only by changing return type of a method we can't achieve 
+//	compile time polymorphism we have to change arguments
 }
