@@ -41,5 +41,19 @@ package abstraction;
 */
 
 public class AbstractionDemo {
+	public static void main(String[] args) {
+		// object reference to the AbstractClass and object creation to the
+		// AbstractClassImpl
+		AbstractClass aObj = new AbstractClassImpl();
+		aObj.methodOne();
+		aObj.methodTwo();
+		
+		// object reference to the Interface and object creation to 
+		// the Implementation class
+		MyInterface iObj = new MyInterfaceImpl();
+		iObj.methodOne();
+		iObj.methodTwo();
+		
+	}
 
 }
