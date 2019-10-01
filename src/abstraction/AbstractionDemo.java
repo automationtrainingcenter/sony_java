@@ -54,6 +54,19 @@ public class AbstractionDemo {
 		iObj.methodOne();
 		iObj.methodTwo();
 		
+		// single class implementing multiple interfaces
+		InterfaceOne i1Obj = new MultipleIntefaceImpl();
+		i1Obj.methodOne();
+		
+//		InterfaceTwo i2Obj = new MultipleIntefaceImpl();
+//		i2Obj.methodTwo();
+		
+//		MultipleIntefaceImpl obj = (MultipleIntefaceImpl) i1Obj;
+//		obj.methodTwo();
+		
+		InterfaceTwo i2Obj = (InterfaceTwo) i1Obj;
+		i2Obj.methodTwo();
+		
 	}
 
 }
