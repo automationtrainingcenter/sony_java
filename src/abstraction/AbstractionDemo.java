@@ -1,4 +1,7 @@
 package abstraction;
+
+import abstraction.Outer.Inner;
+
 /*
 * Abstraction means a plan or template to create a class
 * Abstraction means hiding the implementation details of methods
@@ -29,6 +32,12 @@ package abstraction;
 * we can't create an instance of either abstract class or interface but we can create object reference,
 * 
 * Type of interfaces
+* Inner interface or nested interface
+* inner interface is an interface inside another interface.
+* a single java class can implement the outer interface as well as 
+* the inner interface or we can create two different class to implement
+* outer and inner interfaces.
+* 
 * Marker or tagged interface
 * 	it is an interface without any abstract methods like Serializable, Clonable .etc
 * 	Generally these interfaces provides special instructions to the JVM
@@ -67,6 +76,26 @@ public class AbstractionDemo {
 		InterfaceTwo i2Obj = (InterfaceTwo) i1Obj;
 		i2Obj.methodTwo();
 		
+		
+//		Java8 interfaces
+		Java8Interface jObj = new Java8IntefaceImpl();
+		jObj.methodOne();
+		// default method of Java8 interface
+		jObj.methodThree();
+		// static method of Java8 interface
+		Java8Interface.methodTwo();
+		
+		// inner interfaces
+		Outer oObj = new OuterAndInnerImpl();
+		oObj.methodOne();
+		
+//		Outer.Inner inObj = new OuterAndInnerImpl();
+		Outer.Inner inObj = (Outer.Inner)oObj;
+		inObj.methodTwo();
+		
+//		Inner innObj = oObj.method();
+//		innObj.methodTwo();
+		oObj.method().methodTwo();
 	}
 
 }
